@@ -43,4 +43,10 @@ public class AccountController {
         return accountRepository.findById(userId)
                 .orElseThrow(() -> new AccountNotFoundException("No se encontro una cuenta con el userId: " + userId));
     }
+    @GetMapping("/filter/{occupation}")
+    Account getUserByFilter(@PathVariable String userId){
+        return accountRepository.findById(userId)
+                .orElseThrow(() -> new AccountNotFoundException("No se encontro una cuenta con el userId: " + userId));
+    }
+
 }
