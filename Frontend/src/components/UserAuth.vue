@@ -9,6 +9,7 @@
                 <br>
                 <input type="password" v-model="user_in.password" placeholder="Password">
                 <br>
+                <button type="submit">Inici</button>
                 <button type="submit">Iniciar Sesion</button>
             </form>
         </div>
