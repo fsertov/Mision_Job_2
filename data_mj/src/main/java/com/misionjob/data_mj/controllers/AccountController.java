@@ -21,9 +21,14 @@ public class AccountController {
         //Seed
         Account newAccount01 = new Account("001", "Fernando", "Serrano", "Ingeniero",  100000, 50, new Date());
         Account newAccount02 = new Account("002", "Santiago", "Romero", "Arquitecto", 2000000, 40, new Date());
+        Account newAccount03 = new Account("003", "Oscar", "Molina", "Docente",  300000, 20, new Date());
+        Account newAccount04 = new Account("004", "Gianpier", "Verutti", "Tecnico", 800000, 10, new Date());
+
 
         this.accountRepository.save(newAccount01);
         this.accountRepository.save(newAccount02);
+        this.accountRepository.save(newAccount03);
+        this.accountRepository.save(newAccount04);
 
     }
 /*
@@ -40,11 +45,6 @@ public class AccountController {
 /*Algo más */
     @GetMapping("/accounts/{userId}")
     Account getAccount(@PathVariable String userId){
-        return accountRepository.findById(userId)
-                .orElseThrow(() -> new AccountNotFoundException("No se encontro una cuenta con el userId: " + userId));
-    }
-    @GetMapping("/filter/{occupation}")
-    Account getUserByFilter(@PathVariable String userId){
         return accountRepository.findById(userId)
                 .orElseThrow(() -> new AccountNotFoundException("No se encontro una cuenta con el userId: " + userId));
     }
