@@ -31,3 +31,54 @@ Desplegar en Heroku
 		heroku container:push web --app apigateway-mision-job
 		heroku container:release web --app apigateway-mision-job
 		heroku open --app apigateway-mision-job
+		
+Pruebas Apigateway
+
+	Borrar la Query de ejemplo en operations
+	
+	Mutation authenticate:
+		
+		dirigirse al nivel Root - marcar mutation - marcar autenticar  - marcar el acces y refresh tambien
+
+		En variables consultar con Json
+		
+			{
+				"authenticateCredentials":{
+					"username": "Fernando Serrano",
+					"password": "password"
+				}
+			}
+
+
+	Probar el Token
+	
+		dirigirse al nivel Root - deseleccionar mutation -  marcar Query -  accouByUser
+		
+		
+		En variables consultar con Json
+		
+			{
+				"authenticateCredentials":{
+					"username": "Fernando Serrano",
+					"password": "password"
+				}
+			}
+
+        userId: String!
+        name: String
+        lastname: String
+        occupation: String
+        aspiration: Int
+        balance: Int
+        lastChange: String
+
+
+
+			{
+
+        "accountByUserIdUserId": "001"
+			}
+
+
+
+
