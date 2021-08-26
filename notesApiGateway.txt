@@ -1,0 +1,33 @@
+****************  A P I    G a t e w a y    *****************
+
+Implementación de  API Gateway en JavaScript, usando NodeJS y ApolloServer.
+
+	Tener instalado node y npm
+
+Cargar la estructura base del proyecto
+
+	En server.js alamcenar las urls de los dos microservicios
+	
+		https://mision-job-users.herokuapp.com
+		https://mision-job-data.herokuapp.com
+	
+Si se desea correr localmente
+
+	npm install
+	node src/index.js
+
+Tener desplegados y funcionales los dos microservicios
+
+Desplegar en Heroku
+
+	Crear Dockerfile
+	Abrir Docker
+	
+	Ejecutar comandos en consola
+	
+		heroku login
+		heroku create apigateway-mision-job
+		heroku container:login
+		heroku container:push web --app apigateway-mision-job
+		heroku container:release web --app apigateway-mision-job
+		heroku open --app apigateway-mision-job
