@@ -8,16 +8,16 @@ public class Account {
     @Id
     private String userId;
     private String name;
-    private String lastname;
+    private String lastName;
     private String occupation;
     private Integer aspiration;
     private Integer balance;
     private Date lastChange;
 
-    public Account(String userId, String name, String lastname, String occupation, Integer aspiration, Integer balance, Date lastChange) {
+    public Account(String userId, String name, String lastName, String occupation, Integer aspiration, Integer balance, Date lastChange) {
         this.userId = userId;
         this.name = name;
-        this.lastname = lastname;
+        this.lastName = lastName;
         this.occupation = occupation;
         this.aspiration = aspiration;
         this.balance = balance;
@@ -33,7 +33,6 @@ public class Account {
         this.userId = userId;
     }
 
-
     public String getName() {
         return name;
     }
@@ -42,14 +41,12 @@ public class Account {
         this.name = name;
     }
 
-
-
     public String getLastName() {
-        return lastname;
+        return lastName;
     }
 
-    public void setLastName(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getOccupation() {
@@ -60,8 +57,6 @@ public class Account {
         this.occupation = occupation;
     }
 
-
-
     public Integer getAspiration() {
         return aspiration;
     }
@@ -69,8 +64,6 @@ public class Account {
     public void setAspiration(Integer aspiration) {
         this.aspiration = aspiration;
     }
-
-
 
     public Integer getBalance() {
         return balance;

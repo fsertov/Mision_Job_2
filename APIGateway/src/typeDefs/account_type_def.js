@@ -4,7 +4,7 @@ const accountTypeDefs = gql`
     type Account {
         userId: String!
         name: String
-        lastname: String
+        lastName: String
         occupation: String
         aspiration: Int
         balance: Int

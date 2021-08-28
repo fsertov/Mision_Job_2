@@ -54,25 +54,17 @@ Pruebas Apigateway
 	
 		dirigirse al nivel Root - deseleccionar mutation -  marcar Query -  accouByUser
 		
-		
-		En variables consultar con Json
-		
-			{
-				"authenticateCredentials":{
-					"username": "Fernando Serrano",
-					"password": "password"
-				}
-			}
+		Marcar los datos:
 
-        userId: String!
-        name: String
-        lastname: String
-        occupation: String
-        aspiration: Int
-        balance: Int
-        lastChange: String
+			userId: String!
+			name: String
+			lastname: String
+			occupation: String
+			aspiration: Int
+			balance: Int
+			lastChange: String
 
-
+		En la variable:
 
 			{
 
@@ -80,5 +72,5 @@ Pruebas Apigateway
 			}
 
 
-
+		En el Header seleccionar Autorizacion y colocar el acces.
 
