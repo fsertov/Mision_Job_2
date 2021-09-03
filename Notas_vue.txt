@@ -1,0 +1,39 @@
+NOTAS VUE
+
+Como cualquier otro proyecto de Node.js, se debe ejecutar el comando
+
+	npm install
+
+En favocin.ico se encuentra el icono de las pestaña del navegador
+
+En el main va la uri del apigateway
+
+	https://apigateway-mision-job.herokuapp.com/
+
+Ejecutar el servidor localmente 
+	npm run serve
+
+Se debe incluir el token en las peticiones que se realicen al API Gateway. Para indicarle al Provider que haga uso del token
+de acceso, que se encuentra almacenado en el local storage, se debe modificar el contexto del Provider,
+(en esta modificación se debe incluir un header con el token). Para realizar la anterior modificación se hace uso de un elemento setContext, el cual permitirá modificar
+los headers de las Queries y Mutations. Para hacer uso del setContext, se debe instalar un paquete
+llamado apollo-link-context.
+
+	npm install --save apollo-link-context
+	
+Desplegar en heroku
+
+	heroku login
+	heroku create appName
+	heroku container:login
+	heroku container:push web --app appName
+	heroku container:release web --app appName
+
+
+	
+BBOSTRAP
+	
+	npm install bootstrap@5.0.1
+
+
+
