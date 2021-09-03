@@ -7,11 +7,11 @@
 <nav class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand"><h1>MISION JOB</h1></a>
-      <button v-on:click="init" v-if="is_auth" type="button" class="btn btn-outline-light">Inicio</button>
-        <button v-on:click="account" v-if="is_auth" type="button" class="btn btn-outline-light">Mis Datos</button>
-        <button v-on:click="transacction" v-if="is_auth" type="button" class="btn btn-outline-light">Puntos</button>
-        <button v-on:click="historial" v-if="is_auth" type="button" class="btn btn-outline-light">Vacantes</button>
-        <button v-on:click="logOut" v-if="is_auth" type="button" class="btn btn-outline-light">Cerrar Sesión</button>
+      <button v-on:click="init" v-if="is_auth">Inicio</button>
+        <button v-on:click="account" v-if="is_auth">Mis Datos</button>
+        <button v-on:click="transacction" v-if="is_auth">Puntos</button>
+        <button v-on:click="historial" v-if="is_auth">Interacciones</button>
+        <button v-on:click="logOut" v-if="is_auth">Cerrar Sesión</button>
   </div>
 </nav>
 

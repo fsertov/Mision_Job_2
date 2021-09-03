@@ -4,19 +4,19 @@
   <div class="card-header">
     <h2>Autenticarse</h2>
   </div>
-<div class="card-body" style="display:flex;justify-content:center;">
-    <form v-on:submit.prevent="processAuthUser" style="display:flex;flex-direction:column; justify-content:center">
-        <label for="inputUsername">User Name</label>
-        <input v-model="user_in.username" placeholder="Username" style="margin:10px 0px;"
+<div class="card-body">
+    <form v-on:submit.prevent="processAuthUser">
+        <label for="inputUsername" class="col-sm-2 col-form-label">User Name</label>
+        <input v-model="user_in.username" placeholder="Username"
             type="text"
             class="form-control"
         />
-        <label for="inputPassword">Password</label>
-        <div>
-        <input v-model="user_in.password" style="margin:10px 0px;"
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+        <input v-model="user_in.password"
             placeholder="Password" type="password" class="form-control"/>
         </div>    
-             <button type="submit" class="btn btn-success" style="margin-top:10px;">Iniciar Sesion</button>
+             <button type="submit" class="btn btn-success">Iniciar Sesion</button>
 
     </form>
 </div>
@@ -104,7 +104,7 @@ export default {
     }
 
     .auth_user form{
-        width: 100%;
+        width: 50%;
         
     }
 
